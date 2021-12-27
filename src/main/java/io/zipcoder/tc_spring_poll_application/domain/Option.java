@@ -8,10 +8,10 @@ public class Option {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "OPTION_ID")
-    Long id;
+    private Long id;
 
     @Column(name = "OPTION_VALUE")
-    String value;
+    private String value;
 
     public Long getId() {
         return id;
