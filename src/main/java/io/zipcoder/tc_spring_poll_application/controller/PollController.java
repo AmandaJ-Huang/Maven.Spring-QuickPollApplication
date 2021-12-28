@@ -36,6 +36,8 @@ public class PollController {
                 .buildAndExpand(poll.getId())
                 .toUri();
 
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setLocation(newPollUri);
         return new ResponseEntity<>(newPollUri, HttpStatus.CREATED);
     }
 

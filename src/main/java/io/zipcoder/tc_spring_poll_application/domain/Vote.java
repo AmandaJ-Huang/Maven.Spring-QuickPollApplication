@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Vote {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "VOTE_ID")
     private Long id;
 
